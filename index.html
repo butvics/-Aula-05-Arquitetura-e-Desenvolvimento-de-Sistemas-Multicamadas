@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>cerveja.biz - Criar Cliente</title>
+    <title>Criar País</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -26,7 +26,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Clientes</a>
+                    <li><a href="index.html">Países</a>
                     </li>
                 </ul>
             </div>
@@ -34,25 +34,25 @@
     </nav>
     <!-- Container Principal -->
     <div id="main" class="container">
-        <h3 class="page-header">Incluir Cliente</h3>
+        <h3 class="page-header">Incluir País</h3>
         <!-- Formulario para inclusao de clientes -->
-        <form action="ManterCliente.do" method="post">
+        <form action="ManterPais.do" method="post">
             <!-- area de campos do form -->
             <div class="row">
                 <div class="form-group col-md-12">
-                    <label for="nome">Nome</label>
-                    <input type="text" class="form-control" name="nome" id="nome" required maxlength="100" placeholder="nome completo">
+                    <label for="nomePais">Nome do país</label>
+                    <input type="text" class="form-control" name="nomePais" id="nomePais" required maxlength="100" pattern="[a-zA-Z]*" placeholder="Nome do país">
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-md-6">
-                    <label for="fone">Celular</label>
-                    <input type="tel" class="form-control" name="fone" id="fone" maxlength="15" pattern="(?:\(\d{2}\)|\d{2})[- ]?\d{5}[- ]?\d{4}" placeholder="opcional; celular com ddd no formato (99) 99999-9999">
+                    <label for=populacaoPais>População do país</label>
+                    <input type="text" class="form-control" name="populacaoPais" id="populacaoPais" maxlength="20" pattern="[\d{1}].*" placeholder="Quantidade da população do país em número inteiro">
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label for="email">E-Mail</label>
-                    <input type="email" class="form-control" name="email" id="email" required maxlength="60" placeholder="email obrigatório">
+                    <label for="areaPais">Area do país</label>
+                    <input type="text" class="form-control" name="areaPais" id="areaPais" required maxlength="20" pattern="[\d{1}].*" placeholder="Área do país em km²">
                 </div>
             </div>
             <hr />
